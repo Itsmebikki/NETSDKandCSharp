@@ -1,18 +1,27 @@
+using System.IO;
+
 class FileIO
 {
-    public void Createfile()
-    {
-        string folderPath = @"D:\Traineeship\Day8-9\NETStarter\Filehandling";
-        string fileName="student.txt";
-        string filePath=Path.Combine(folderPath,fileName);
-        File.WriteAllText(filePath,"This is first line");
+    string folderPath = @"D:\Traineeship\NETSDKandCSharp\Day8-9\NETStarter\Filehandling\FileIO.cs";
+    
+    //Create a text file
+    public void CreateFile()
+    {        
+        string fileName = "student.txt";
+        string filePath = Path.Combine(folderPath, fileName);
+        
+        File.WriteAllText(filePath, "this is first line");
     }
+
     public void CreateFileWithInFolder()
     {
         string newFolderName = "Student";
-        Directory.CreateDirectory(newFolderName);
-        string fileName="student1.txt";
-        string filePath=Path.Combine(folderPath, newFolderName, fileName);
-        File.WriteAllText(filePath,"This is first line");
+        string newFodlerPath = Path.Combine(folderPath, newFolderName);
+        Directory.CreateDirectory(newFodlerPath);
+
+        string fileName = "Student1.txt";
+        string filePath = Path.Combine(newFodlerPath, fileName);
+        
+        File.WriteAllText(filePath, "this is first line");
     }
 }
