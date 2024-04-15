@@ -1,0 +1,49 @@
+REST/HTTP API or REST/HTTP Endpoints
+-Web application
+-Has set of URLs/Endpoints but without UI
+-Other client applications(Web, Desktop, Console,Mobile etc) consume those 
+ URLs)
+-Deals with data only
+-JSON(Javascript Object notation)
+
+
+XML and JSON (Data Format)
+--------------
+
+Example:Two books
+Raw(CSV):			"CSV,TSV(Comma/Tab separated values)"
+Machine Learning,II, 1000.00,1985-12-03
+DSA, IV, 2500.00, 2000-04-04
+
+XML:
+<book>
+	<title>Machine Learning</title>
+	<edition>II</edition>
+	<price>1000.00</price>
+	<Published>1985-12-03</Published>
+</book>
+<book>
+	<title>DSA</title>
+	<edition>IV</edition>
+	<price>2500.00</price>
+	<Published>2000-04-04</Published>
+</book>
+
+JSON:(lightweight comparatively)
+[
+	{
+	 	"title":"Machine Learning",
+		"edition":"II",
+		"price":1000.00,
+		"published":1985-12-03,
+		"publisher":{
+				"name":"EKTA"
+			    }
+	},
+	{
+	 	"title":"DSA",
+		"edition":"IV",
+		"price":2500.00,
+		"published":2000-04-04
+	}
+]
