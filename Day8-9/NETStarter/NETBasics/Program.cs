@@ -46,20 +46,20 @@
 
 
 //Day10 example
-Rectangle r=new(3.5,2.3);
-var P=r.GetPerimeter();
-var  A=r.GetArea();
+// Rectangle r=new(3.5,2.3);
+// var P=r.GetPerimeter();
+// var  A=r.GetArea();
 
-Square sq1=new(7);
-P=sq1.GetPerimeter();
-A=sq1.GetArea();
+// Square sq1=new(7);
+// P=sq1.GetPerimeter();
+// A=sq1.GetArea();
 
-Circle c1 = new(5);
-var  PC = c1.GetPerimeter();
-var AC = c1.GetArea();
-Console.WriteLine("The perimeter of cirle is"+PC);
-Console.WriteLine("The area of cirle is"+AC);
+// Circle c1 = new(5);
+// var  PC = c1.GetPerimeter();
+// var AC = c1.GetArea();
+// Console.WriteLine("The perimeter of cirle is"+PC);
+// Console.WriteLine("The area of cirle is"+AC);
 
-Sphere sp1 = new(23.5);
-var Sa = c1.GetArea();
-sp1.PrintSphereInfo();
+// Sphere sp1 = new(23.5);
+// var Sa = c1.GetArea();
+// sp1.PrintSphereInfo();
