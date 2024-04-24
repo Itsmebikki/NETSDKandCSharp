@@ -2,7 +2,7 @@ using System.IO;
 
 class FileIO
 {
-    string folderPath = @"D:\Traineeship\NETSDKandCSharp\Day8-9\NETStarter\Filehandling\FileIO.cs";
+    string folderPath = @"D:\Traineeship\NETSDKandCSharp\Day8-9\NETStarter\Filehandling";
     
     //Create a text file
     public void CreateFile()

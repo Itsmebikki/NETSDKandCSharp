@@ -46,20 +46,57 @@
 
 
 //Day10 example
-// Rectangle r=new(3.5,2.3);
-// var P=r.GetPerimeter();
-// var  A=r.GetArea();
+using Inheritance;
 
-// Square sq1=new(7);
-// P=sq1.GetPerimeter();
-// A=sq1.GetArea();
+Rectangle rec = new(2.4,4);
+var p = rec.GetArea();
 
-// Circle c1 = new(5);
-// var  PC = c1.GetPerimeter();
-// var AC = c1.GetArea();
-// Console.WriteLine("The perimeter of cirle is"+PC);
-// Console.WriteLine("The area of cirle is"+AC);
+Rectangle rec2 = new(2.4,4);
+var p1 = rec.GetPerimeter();
+Console.WriteLine("Area of Rectangle"+p);
+Console.WriteLine("Perimeter of Rectangle"+p1);
 
-// Sphere sp1 = new(23.5);
-// var Sa = c1.GetArea();
-// sp1.PrintSphereInfo();
+// var square1 = new square(2.4);
+// var sa = square1.GetArea();
+
+
+// var c = new Circle(5.6);
+// var cc = c.GetArea();
+// var c2 = c.GetPerimeter();
+
+// Console.WriteLine("Area of circle "+cc);
+// Console.WriteLine("Perimeter of circle "+c2);
+
+// ParallelAsync parallelAsync = new();
+// parallelAsync.ProcessNumbers();
+
+// await parallelAsync.IgniteStove();
+// await parallelAsync.PutKeatleyOnWithWater();
+// await parallelAsync.GrindMasala();
+
+BasicDbContext db = new();
+var teacher1 = new Teacher
+{
+    Name = "Bishnudip Ch",
+    Address = "Ghorahi",
+    Qualification = "Postgraduate",
+    Gender = 'M',
+    Dob = new DateTime(2056/12/12)
+};
+db.Teachers.Add(teacher1);
+db.SaveChanges();
+
+var teachers = db.Teachers.ToList();        //Select *from teachers
+
+//list all teachers from dang
+var Teachers = db.Teachers
+.Where(x => x.Gender=='F' && x.Address=="Dang")
+.ToList();
+
+foreach(var teacher in teachers)
+{
+    Console.WriteLine($"Name{teacher.Name} Dob{teacher.Dob}");
+}
+
+
+
